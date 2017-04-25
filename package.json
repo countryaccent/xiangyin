@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/countryaccent/xiangyin.git"
@@ -17,7 +15,9 @@
   },
   "homepage": "https://github.com/countryaccent/xiangyin#readme",
   "dependencies": {
-    "egg": "^1.1.0"
+    "koa": "^2.2.0",
+    "koa-router": "^7.1.1",
+    "koa-static": "^3.0.0"
   },
   "devDependencies": {
     "egg-bin": "^3.3.0"
