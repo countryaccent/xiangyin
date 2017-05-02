@@ -4,10 +4,19 @@ class RouterManager {
 		this.router = router;
 		this.initRouter();
 	}
-	initRouter() {
-		this.router.get('/',function(ctx,next){
-			ctx.body = 'hello';
+	getRouter(path,url) {
+		this.router.get(path,(ctx,next)=>{
+			require(global.BASE_PATH+url).getControl(ctx,next);
 		});
+	}
+	postRouter(path,url) {
+		this.router.post(path,(ctx,next)=>{
+			require(global.BASE_PATH+url).getControl(ctx,next);
+		});
+	}
+	initRouter() {
+		//首页
+		this.getRouter('/','/src/controller/home/pages/home.js');
 	}
 }
 

@@ -1,0 +1,17 @@
+{% set pagetitle = "zone" %}
+{% extends '../inc/layout.html' %}
+{% block head %}
+{% parent %}
+{% endblock %}
+
+{% block content %}
+<div class="layout-breadcrumb">
+    <Breadcrumb>
+        <Breadcrumb-item href="/">首页</Breadcrumb-item>
+        <Breadcrumb-item>某应用</Breadcrumb-item>
+    </Breadcrumb>
+</div>
+<div class="layout-content">
+内容区域
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    {% include "config.html" %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <title><% pagetitle %></title>
+    <link rel="stylesheet" href="/static/css/iview.css" />
+    <link rel="stylesheet" href="/static/css/common.css" />
+    <script type="text/javascript" src="/static/js/vue.js"></script>
+    <script type="text/javascript" src="/static/js/iview.js"></script>
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    <div class="XY-layout" id="XY-APP">
+        {% include "header.html" %}
+        {% block content %}
+        {% endblock %}
+        {% include "footer.html" %}
+    </div>
+</body>
+</html>
